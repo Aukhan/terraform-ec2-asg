@@ -29,7 +29,7 @@ resource "aws_autoscaling_group" "terraform_autoscaling_group" {
 
   vpc_zone_identifier = [
     "${aws_subnet.terraform_cluster_subnet_1.id}",
-    "${aws_subnet.terraform_cluster_subnet_1.id}",
+    "${aws_subnet.terraform_cluster_subnet_2.id}"
   ]
 
   tag {
